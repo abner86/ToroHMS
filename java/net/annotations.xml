@@ -1,0 +1,6 @@
+<root>
+    <item name='java.net.URL java.lang.String toExternalForm()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='java.lang.annotation.Deprecated'/>
+    </item>
+</root>
