@@ -5,9 +5,9 @@ package Hotel;
  */
 abstract class Room {
     int roomNumber;
-    String roomType;
-    float rates;
-    int maxNumOfPeople;
+    private String roomType;
+    private float rates;
+    private int maxNumOfPeople;
 //    int[][][] dates = new int[10][10][10];
     //   int resize_factor=10;
 

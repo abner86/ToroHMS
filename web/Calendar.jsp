@@ -16,13 +16,15 @@
     <!-- Javascript -->
     <script>
         $(function () {
-            $("#datepicker-8").datepicker({
+            //Check-in jquery calendar
+            $("#datepicker-1").datepicker({
                 prevText: "click for previous months",
                 nextText: "click for next months",
                 showOtherMonths: true,
                 selectOtherMonths: false
             });
-            $("#datepicker-9").datepicker({
+            //Check-out jquery calendar
+            $("#datepicker-2").datepicker({
                 prevText: "click for previous months",
                 nextText: "click for next months",
                 showOtherMonths: true,
@@ -32,9 +34,9 @@
     </script>
 </head>
 <body>
-<!-- HTML -->
-<p>Check In: <input type="text" id="datepicker-8"></p>
+<!-- HTML with jquery datepicker will pop out when user clicks on box -->
+<p>Check In: <input type="text" style="width:90px; margin-left: 10px;" id="datepicker-1"></p>
 
-<p>Check Out: <input type="text" id="datepicker-9"></p>
+<p>Check Out: <input type="text" style="width:90px; margin-top: 5px;" id="datepicker-2"></p>
 </body>
 </html>

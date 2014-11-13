@@ -9,6 +9,8 @@ public class User {
     private String lastname;
     private String address;
     private String email;
+    private String username; //for employee login
+    private String password; //for employee login
     private int checkinMonth;
     private int checkinDay;
     private int checkinYear;
@@ -19,6 +21,8 @@ public class User {
     private int creditCardMonth;
     private int creditCardYear;
     private int creditCardCvv;
+
+    public boolean isValid; //to authenticate employee login
 
     public User(String f, String l, String a, String e, int cid, int cim, int ciy, int cod, int com, int coy, int ccn, int ccm, int ccy, int cccvv) {
 
@@ -58,59 +62,139 @@ public class User {
 
     }
 
-    String getFirstname() {
+    public String getFirstname() {
         return firstname;
     }
 
-    String getLastname() {
+    public void setFirstname(String firstname) {
+        this.firstname = firstname;
+    }
+
+    public String getLastname() {
         return lastname;
     }
 
-    String getAddress() {
+    public void setLastname(String lastname) {
+        this.lastname = lastname;
+    }
+
+    public String getAddress() {
         return address;
     }
 
-    String getEmail() {
+    public void setAddress(String address) {
+        this.address = address;
+    }
+
+    public String getEmail() {
         return email;
     }
 
-    int getCheckinDay() {
-        return checkinDay;
+    public void setEmail(String email) {
+        this.email = email;
     }
 
-    int getCheckinMonth() {
+    public String getUsername() {
+        return username;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    public int getCheckinMonth() {
         return checkinMonth;
     }
 
-    int getCheckinYear() {
+    public void setCheckinMonth(int checkinMonth) {
+        this.checkinMonth = checkinMonth;
+    }
+
+    public int getCheckinDay() {
+        return checkinDay;
+    }
+
+    public void setCheckinDay(int checkinDay) {
+        this.checkinDay = checkinDay;
+    }
+
+    public int getCheckinYear() {
         return checkinYear;
     }
 
-    int getCheckoutDay() {
-        return checkoutDay;
+    public void setCheckinYear(int checkinYear) {
+        this.checkinYear = checkinYear;
     }
 
-    int getCheckoutMonth() {
+    public int getCheckoutMonth() {
         return checkoutMonth;
     }
 
-    int getCheckoutYear() {
+    public void setCheckoutMonth(int checkoutMonth) {
+        this.checkoutMonth = checkoutMonth;
+    }
+
+    public int getCheckoutDay() {
+        return checkoutDay;
+    }
+
+    public void setCheckoutDay(int checkoutDay) {
+        this.checkoutDay = checkoutDay;
+    }
+
+    public int getCheckoutYear() {
         return checkoutYear;
     }
 
-    int getCreditCardNum() {
+    public void setCheckoutYear(int checkoutYear) {
+        this.checkoutYear = checkoutYear;
+    }
+
+    public int getCreditCardNum() {
         return creditCardNum;
     }
 
-    int getCreditCardMonth() {
+    public void setCreditCardNum(int creditCardNum) {
+        this.creditCardNum = creditCardNum;
+    }
+
+    public int getCreditCardMonth() {
         return creditCardMonth;
     }
 
-    int getCreditCardYear() {
+    public void setCreditCardMonth(int creditCardMonth) {
+        this.creditCardMonth = creditCardMonth;
+    }
+
+    public int getCreditCardYear() {
         return creditCardYear;
     }
 
-    int getCreditCardCvv() {
+    public void setCreditCardYear(int creditCardYear) {
+        this.creditCardYear = creditCardYear;
+    }
+
+    public int getCreditCardCvv() {
         return creditCardCvv;
+    }
+
+    public void setCreditCardCvv(int creditCardCvv) {
+        this.creditCardCvv = creditCardCvv;
+    }
+
+    public boolean isValid() {
+        return isValid;
+    }
+
+    public void setValid(boolean isValid) {
+        this.isValid = isValid;
     }
 }

@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="DataSourceManagerImpl" format="xml" hash="2974057599">
-    <data-source source="LOCAL" name="MySQL - @localhost" uuid="39e7750c-0a9c-4e4f-ab6d-16b06f4117fc">
+  <component name="DataSourceManagerImpl" format="xml" hash="3072062000">
+    <data-source source="LOCAL" name="MySQL - ToroHMS@localhost" uuid="80e4df3d-2eef-4abb-a593-46ca5838b9a3">
       <driver-ref>mysql</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
-      <jdbc-url>jdbc:mysql://localhost:3306</jdbc-url>
+      <jdbc-url>jdbc:mysql://localhost:3306/ToroHMS</jdbc-url>
       <user-name>abnerb86</user-name>
       <user-password>dfcbdfcedfd8dfc3dfcbdfc8df98df9adf9adf9f</user-password>
+      <schema-pattern>ToroHMS.*</schema-pattern>
+      <default-schemas>ToroHMS.*</default-schemas>
       <driver-properties>
         <property name="zeroDateTimeBehavior" value="convertToNull" />
         <property name="tinyInt1isBit" value="false" />

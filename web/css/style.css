@@ -92,17 +92,17 @@ input[type=password] {
     margin-bottom: 20px;
 }
 
-label[for=remember] {
+/*label[for=remember] {
     color: white;
     display: inline-block;
     padding-bottom: 0;
     padding-top: 5px;
-}
-
+}*/
+/*
 input[type=checkbox] {
     display: inline-block;
     vertical-align: top;
-}
+}*/
 
 .p-container {
     padding: 0 20px 20px 20px;
@@ -114,12 +114,12 @@ input[type=checkbox] {
     content: "";
 }
 
-.p-container span {
+/*.p-container span {
     display: block;
     float: left;
     color: #0d93ff;
     padding-top: 8px;
-}
+}*/
 
 input[type=submit] {
     padding: 5px 20px;

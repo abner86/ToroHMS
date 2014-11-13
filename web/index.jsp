@@ -13,7 +13,7 @@
     <title>Hotel Toro</title>
     <meta name="keywords" content="hotel, travel, cheap, Hotel in Los Angeles"/>
     <meta name="description" content="Hotel"/>
-    <link href="toro_style.css" rel="stylesheet" type="text/css"/>
+    <link href="css/toro_style.css" rel="stylesheet" type="text/css"/>
 
 
 </head>
@@ -24,7 +24,7 @@
             <div id="title">
                 Hotel Toro
             </div>
-            <div id="salgon">
+            <div id="bottomTitle">
                 The best service at the lowest price
             </div>
         </div>
@@ -52,10 +52,12 @@
                         <jsp:include page="Calendar.jsp"/>
                     </div>
                     <div class="form_row">
-                        <label>Persons:</label>
-                        <input class="inputfield" name="person" type="text" style="width:30px; margin-right: 20px;"/>
+                        <label>Persons: </label>
+                        <jsp:include page="NumOfPeople.jsp"/>
+                        <br/>
+                        <br/>
                         <label>Rooms:</label>
-                        <input class="inputfield" name="person" type="text" style="width: 30px;"/>
+                        <jsp:include page="TypeOfRoom.jsp"/>
                     </div>
                     <div class="cleaner_h20">&nbsp;</div>
                     <div class="rc_btn_1"><a href="#">Check Availability</a></div>

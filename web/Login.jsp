@@ -11,10 +11,11 @@
 <head>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <title>Staff Login</title>
-    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
 </head>
 <body>
-<form>
+<!--JSP calls LoginServlet, which handles the user request for authentication -->
+<form action="loginServlet" method="GET">
     <h1>Staff Login</h1>
 
     <div class="inset">
@@ -29,7 +30,6 @@
         </p>
     </div>
     <p class="p-container">
-        <span>Forgot Password</span>
         <input type="submit" name="go" id="go" value="Login">
     </p>
 </form>

@@ -7,6 +7,9 @@
         <element id="directory" name="classes">
           <element id="module-output" name="ToroHMS" />
         </element>
+        <element id="directory" name="lib">
+          <element id="library" level="application" name="mysql-connector-java-5.1.31-bin" />
+        </element>
       </element>
     </root>
   </artifact>

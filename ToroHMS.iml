@@ -24,6 +24,7 @@
     <orderEntry type="library" name="Prototype-1.7.1" level="application" />
     <orderEntry type="library" name="Knockout-2.2.1" level="application" />
     <orderEntry type="library" name="script.aculo.us-1.9.0" level="application" />
+    <orderEntry type="library" name="mysql-connector-java-5.1.31-bin" level="application" />
   </component>
 </module>
 
