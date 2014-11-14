@@ -52,7 +52,6 @@
                         <jsp:include page="Calendar.jsp"/>
                     </div>
                     <div class="form_row">
-                        <label>Persons: </label>
                         <jsp:include page="NumOfPeople.jsp"/>
                         <br/>
                         <br/>

@@ -22,7 +22,15 @@
     <autoscroll-to-editor value="false" />
     <autoscroll-from-editor value="true" />
     <show-object-properties value="false" />
-    <loaded-nodes />
+    <loaded-nodes>
+      <connection connection-id="aa5b3091-1b6b-4435-85e5-4fa56bbf2872">
+        <schema name="ToroHMS" object-types="column, constraint, function, index, procedure, table, dataset trigger, view" />
+        <schema name="emotheearth" object-types="function, procedure, table, view" />
+        <schema name="emotherearth" object-types="function, procedure, table, view" />
+        <schema name="teamcity" object-types="function, procedure, table, view" />
+        <schema name="testdb" object-types="function, procedure, table, view" />
+      </connection>
+    </loaded-nodes>
   </component>
   <component name="DBNavigator.Project.MethodExecutionManager">
     <method-browser />
@@ -32,7 +40,64 @@
     </execution-history>
   </component>
   <component name="DBNavigator.Project.Settings">
-    <connections />
+    <connections>
+      <connection id="aa5b3091-1b6b-4435-85e5-4fa56bbf2872">
+        <database>
+          <name value="ToroHMS" />
+          <description value="" />
+          <active value="true" />
+          <os-authentication value="false" />
+          <database-type value="MYSQL" />
+          <database-version value="5.5" />
+          <user value="abnerb86" />
+          <password value="YWRyaWFiMjAwNQ==" />
+          <driver-library value="/opt/tomcat/lib/mysql-connector-java-5.1.31-bin.jar" />
+          <driver value="com.mysql.jdbc.Driver" />
+          <url value="jdbc:mysql://localhost:3306/ToroHMS" />
+        </database>
+        <details>
+          <charset value="UTF-8" />
+          <auto-commit value="false" />
+          <ddl-file-binding value="true" />
+          <environment-type value="default" />
+          <idle-time-to-disconnect value="30" />
+          <max-connection-pool-size value="7" />
+          <alternative-statement-delimiter value="" />
+          <connect-automatically value="true" />
+        </details>
+        <object-filters hide-empty-schemas="false">
+          <object-type-filter use-master-settings="true">
+            <object-type name="SCHEMA" enabled="true" />
+            <object-type name="USER" enabled="true" />
+            <object-type name="ROLE" enabled="true" />
+            <object-type name="PRIVILEGE" enabled="true" />
+            <object-type name="CHARSET" enabled="true" />
+            <object-type name="TABLE" enabled="true" />
+            <object-type name="VIEW" enabled="true" />
+            <object-type name="MATERIALIZED VIEW" enabled="true" />
+            <object-type name="NESTED TABLE" enabled="true" />
+            <object-type name="COLUMN" enabled="true" />
+            <object-type name="INDEX" enabled="true" />
+            <object-type name="CONSTRAINT" enabled="true" />
+            <object-type name="DATASET TRIGGER" enabled="true" />
+            <object-type name="DATABASE TRIGGER" enabled="true" />
+            <object-type name="SYNONYM" enabled="true" />
+            <object-type name="SEQUENCE" enabled="true" />
+            <object-type name="PROCEDURE" enabled="true" />
+            <object-type name="FUNCTION" enabled="true" />
+            <object-type name="PACKAGE" enabled="true" />
+            <object-type name="TYPE" enabled="true" />
+            <object-type name="TYPE ATTRIBUTE" enabled="true" />
+            <object-type name="ARGUMENT" enabled="true" />
+            <object-type name="DIMENSION" enabled="true" />
+            <object-type name="CLUSTER" enabled="true" />
+            <object-type name="DBLINK" enabled="true" />
+          </object-type-filter>
+          <object-name-filters />
+        </object-filters>
+        <consoles />
+      </connection>
+    </connections>
     <browser-settings>
       <general>
         <display-mode value="TABBED" />

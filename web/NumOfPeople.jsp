@@ -8,8 +8,11 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Jquery select/Number of People</title>
-    <script type="text/javascript" src="jquery-2.0.0.min.js"></script>
+    <title>Jquery UI Select Menu</title>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css">
+    <script src="//code.jquery.com/jquery-2.0.2.js"></script>
+    <script src="//code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+    <%--    <link rel="stylesheet" href="/resources/demos/style.css">--%>
 </head>
 <body>
 <script type="text/javascript">
@@ -51,9 +54,9 @@
         });
     })
 </script>
-<select id="person">
-    <option value="None">-- Select --</option>
-    <option value="1">1</option>
+<label for="person">Select number of People:</label>
+<select name="person" id="person">
+<option value="1">1</option>
     <option value="2">2</option>
     <option value="3">3</option>
     <option value="5">5</option>
