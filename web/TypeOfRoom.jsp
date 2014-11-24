@@ -9,10 +9,11 @@
 <html>
 <head>
     <title>Jquery select/Type of Room</title>
-    <script type="text/javascript" src="jquery-2.0.0.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-2.0.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
 </head>
 <body>
-<script type="text/javascript">
+<script type="text/javascript" class="RoomType" name="RoomType">
     $(document).ready(function () {
         $("#isSelect").click(function () {
             alert($('#roon').val());

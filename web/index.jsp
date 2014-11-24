@@ -34,7 +34,7 @@
         <div id="toro_menu">
             <ul>
                 <li><a href="index.jsp" class="current">Home</a></li>
-                <li><a href="index.jsp">Booking</a></li>
+                <li><a href="Booking.jsp">Booking</a></li>
                 <li><a href="index.jsp">Gallery</a></li>
                 <li><a href="Login.jsp">Staff Login</a></li>
                 <li><a href="index.jsp" class="last">Contact</a></li>

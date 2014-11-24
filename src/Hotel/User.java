@@ -9,14 +9,11 @@ public class User {
     private String lastname;
     private String address;
     private String email;
+    private String phone;
     private String username; //for employee login
     private String password; //for employee login
-    private int checkinMonth;
-    private int checkinDay;
-    private int checkinYear;
-    private int checkoutMonth;
-    private int checkoutDay;
-    private int checkoutYear;
+    private int checkin;
+    private int checkout;
     private int creditCardNum;
     private int creditCardMonth;
     private int creditCardYear;
@@ -24,18 +21,14 @@ public class User {
 
     public boolean isValid; //to authenticate employee login
 
-    public User(String f, String l, String a, String e, int cid, int cim, int ciy, int cod, int com, int coy, int ccn, int ccm, int ccy, int cccvv) {
+    public User(String f, String l, String a, String e, int ci, int co, int ccn, int ccm, int ccy, int cccvv) {
 
         firstname = f;
         lastname = l;
         address = a;
         email = e;
-        checkinDay = cid;
-        checkinMonth = cim;
-        checkinYear = ciy;
-        checkoutDay = cod;
-        checkoutMonth = com;
-        checkoutYear = coy;
+        checkin = ci;
+        checkout = co;
         creditCardNum = ccn;
         creditCardMonth = ccm;
         creditCardYear = ccy;
@@ -49,12 +42,8 @@ public class User {
         lastname = null;
         address = null;
         email = null;
-        checkinDay = 0;
-        checkinMonth = 0;
-        checkinYear = 0;
-        checkoutDay = 0;
-        checkoutMonth = 0;
-        checkoutYear = 0;
+        checkin = 0;
+        checkout = 0;
         creditCardNum = 0;
         creditCardMonth = 0;
         creditCardYear = 0;
@@ -110,52 +99,20 @@ public class User {
         this.password = password;
     }
 
-    public int getCheckinMonth() {
-        return checkinMonth;
+    public int getCheckin() {
+        return checkin;
     }
 
-    public void setCheckinMonth(int checkinMonth) {
-        this.checkinMonth = checkinMonth;
+    public void setCheckin(int checkin) {
+        this.checkin = checkin;
     }
 
-    public int getCheckinDay() {
-        return checkinDay;
+    public int getCheckout() {
+        return checkout;
     }
 
-    public void setCheckinDay(int checkinDay) {
-        this.checkinDay = checkinDay;
-    }
-
-    public int getCheckinYear() {
-        return checkinYear;
-    }
-
-    public void setCheckinYear(int checkinYear) {
-        this.checkinYear = checkinYear;
-    }
-
-    public int getCheckoutMonth() {
-        return checkoutMonth;
-    }
-
-    public void setCheckoutMonth(int checkoutMonth) {
-        this.checkoutMonth = checkoutMonth;
-    }
-
-    public int getCheckoutDay() {
-        return checkoutDay;
-    }
-
-    public void setCheckoutDay(int checkoutDay) {
-        this.checkoutDay = checkoutDay;
-    }
-
-    public int getCheckoutYear() {
-        return checkoutYear;
-    }
-
-    public void setCheckoutYear(int checkoutYear) {
-        this.checkoutYear = checkoutYear;
+    public void setCheckout(int checkout) {
+        this.checkout = checkout;
     }
 
     public int getCreditCardNum() {
@@ -188,6 +145,14 @@ public class User {
 
     public void setCreditCardCvv(int creditCardCvv) {
         this.creditCardCvv = creditCardCvv;
+    }
+
+    public String getPhone() {
+        return phone;
+    }
+
+    public void setPhone(String phone) {
+        this.phone = phone;
     }
 
     public boolean isValid() {

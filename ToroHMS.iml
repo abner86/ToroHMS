@@ -24,6 +24,10 @@
     <orderEntry type="library" name="Prototype-1.7.1" level="application" />
     <orderEntry type="library" name="Knockout-2.2.1" level="application" />
     <orderEntry type="library" name="script.aculo.us-1.9.0" level="application" />
+    <orderEntry type="library" name="jquery-ui" level="application" />
+    <orderEntry type="library" name="jquery-1.10.2" level="application" />
+    <orderEntry type="library" name="jquery-2.0.2" level="application" />
+    <orderEntry type="library" name="jquery.easing.1.3.js" level="application" />
   </component>
 </module>
 

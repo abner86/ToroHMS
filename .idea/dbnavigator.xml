@@ -25,10 +25,8 @@
     <loaded-nodes>
       <connection connection-id="aa5b3091-1b6b-4435-85e5-4fa56bbf2872">
         <schema name="ToroHMS" object-types="column, constraint, function, index, procedure, table, dataset trigger, view" />
-        <schema name="emotheearth" object-types="function, procedure, table, view" />
-        <schema name="emotherearth" object-types="function, procedure, table, view" />
-        <schema name="teamcity" object-types="function, procedure, table, view" />
-        <schema name="testdb" object-types="function, procedure, table, view" />
+        <schema name="information_schema" object-types="function, procedure, table, view" />
+        <schema name="mysql" object-types="column, constraint, function, index, procedure, table, dataset trigger, view" />
       </connection>
     </loaded-nodes>
   </component>

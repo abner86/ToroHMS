@@ -1,5 +1,6 @@
 package Login;
 
+import Database_Connection.ConnectionManager;
 import Hotel.User;
 
 import java.sql.Connection;
@@ -20,7 +21,7 @@ public class EmployeeDAO {
         String username = info.getUsername();
         String password = info.getPassword();
         String searchQuery = "select * from staff where username='" + username + "' AND password='" + password + "'";
-        //This will pring in the console to keep track of query process
+        //This will print in the console to keep track of query process
         System.out.println("Your username is " + username);
         System.out.println("Your password is " + password);
         System.out.println("Query: " + searchQuery);

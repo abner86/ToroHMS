@@ -7,11 +7,22 @@
         <servlet-name>login</servlet-name>
         <servlet-class>Servlet.LoginServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>reservations</servlet-name>
+        <servlet-class>Servlet.BookingServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>login</servlet-name>
         <url-pattern>/loginServlet</url-pattern>
     </servlet-mapping>
     <welcome-file-list>
         <welcome-file>Login.jsp</welcome-file>
+    </welcome-file-list>
+    <servlet-mapping>
+        <servlet-name>reservations</servlet-name>
+        <url-pattern>/BookingServlet</url-pattern>
+    </servlet-mapping>
+    <welcome-file-list>
+        <welcome-file>Booking.jsp</welcome-file>
     </welcome-file-list>
 </web-app>

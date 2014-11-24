@@ -15,7 +15,7 @@
 </head>
 <body>
 <!--JSP calls LoginServlet, which handles the user request for authentication -->
-<form action="loginServlet" method="GET">
+<form action="loginServlet" method="POST">
     <h1>Staff Login</h1>
 
     <div class="inset">
