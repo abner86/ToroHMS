@@ -2,11 +2,30 @@
  * Created by abner on 11/22/14.
  */
 //jQuery time
+
 $(document).ready(function(){
     var current_fs, next_fs, previous_fs; //fieldsets
     var left, opacity, scale; //fieldset properties which we will animate
     var animating; //flag to prevent quick multi-click glitches
 
+    var values = {
+        //id         :  values
+        'FirstName': 'First Name',
+        'LastName': 'Last Name',
+        'phone': 'Phone Number',
+        'email': 'email address',
+        'StreetAddress': 'Street Address',
+        'City': 'City',
+        'state': 'State',
+        'zip': 'Zip Code',
+        'checkin': 'Check In',
+        'checkout': 'Check Out',
+        'RoomType': 'Room Type',
+        'NumOfPeople': 'Number of Adults'
+    };
+    $("fieldset").submit(function(){
+        return false;
+    });
     $(".next").click(function(){
         if(animating) return false;
         animating = true;
@@ -37,8 +56,27 @@ $(document).ready(function(){
                 current_fs.hide();
                 animating = false;
             },
-            //this comes from the custom easing plugin
+            //this comes from the easing plugin
             easing: 'easeInOutBack'
+        });
+
+        //preparing form5
+        var fields = [$('#FirstName').val() + ' ' + $('#LastName').val(),
+            $('#phone').val(),
+            $('#email').val(),
+            $('#StreetAddress').val(),
+            $('#City').val(),
+            $('#state').val(),
+            $('#zip').val(),
+            $('#checkin').val(),
+            $('#checkout').val(),
+            $('#RoomType').val(),
+            $('#NumOfPeople').val()];
+
+        //this will input all the information to form 5 for staff/customer review
+        var tr = $("#form5 tr");
+        tr.each(function () {
+            $(this).children('td:nth-child(2)').html(fields[$(this).index()]);
         });
     });
 
@@ -78,6 +116,7 @@ $(document).ready(function(){
     });
 
     $(".submit").click(function(){
-        return false;
+        //send information to server/database
+        alert('Data Sent');
     });
 });

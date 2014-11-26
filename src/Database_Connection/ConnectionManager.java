@@ -2,7 +2,6 @@ package Database_Connection;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
-import java.sql.SQLException;
 
 /**
  * Created by abner on 11/10/14.
@@ -24,8 +23,9 @@ public class ConnectionManager {
             try {
                 connection = DriverManager.getConnection(url + dbName, dbUser, dbPass);
                 System.out.println("Connection Success"); //prints in console to track progress of connection
-            } catch (SQLException e) {
-                e.printStackTrace();
+            } catch (Exception e) {
+                System.out.println("Database.getConnection() Error -->" + e.getMessage());
+                return null;
             }
         } catch (ClassNotFoundException e) {
             e.printStackTrace();

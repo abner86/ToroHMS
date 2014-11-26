@@ -16,7 +16,7 @@ html {
 }
 
 body {
-    font-family: montserrat, arial, verdana;
+    font-family: montserrat, arial, verdana,sans-serif;
 }
 
 #msform {
@@ -47,22 +47,27 @@ body {
 }
 
 /*inputs*/
-#msform input {
+#msform input, #msform select{
     padding: 15px;
     border: 1px solid #ccc;
     border-radius: 3px;
     margin-bottom: 10px;
     width: 100%;
     box-sizing: border-box;
-    font-family: montserrat;
+    font-family: montserrat,sans-serif;
     color: #2C3E50;
     font-size: 13px;
 }
+#msform select{
+    color:#888;
+    padding: 5px 0 5px 15px;
+}
+#msform option {padding: 0 15px; }
 
 /*buttons*/
 #msform .action-button {
     width: 100px;
-    background: #27AE60;
+    background: #ae1107;
     font-weight: bold;
     color: white;
     border: 0 none;
@@ -72,9 +77,11 @@ body {
     margin: 10px 5px;
 }
 
-#msform .action-button:hover, #msform .action-button:focus {
-    box-shadow: 0 0 0 2px white, 0 0 0 3px #27AE60;
+#msform .action-button:hover, #msform .action-button:focus{
+    box-shadow: 0 0 0 2px white, 0 0 0 3px #ae1107;
 }
+
+.clear {clear: both;}
 
 /*headings*/
 .title {
@@ -85,6 +92,21 @@ body {
 }
 
 #msform h2 span {
+    color: #a90329;
+}
+
+#msform table{
+    margin: 10px 5px;
+    font-size: 13px;
+    font-weight: bold;
+    text-align: left;
+}
+
+#msform table td{
+    padding: 10px 5px;
+}
+
+#msform table td:nth-child(2){
     color: #a90329;
 }
 
@@ -101,7 +123,7 @@ body {
     color: white;
     text-transform: uppercase;
     font-size: 9px;
-    width: 24.33%;
+    width: 20%;
     float: left;
     position: relative;
 }
@@ -139,6 +161,6 @@ body {
 /*marking active/completed steps green*/
 /*the number of the step and the connector before it = green*/
 #progress_bar li.active:before, #progress_bar li.active:after {
-    background: #27AE60;
+    background: #ae1107;
     color: white;
 }

@@ -54,7 +54,6 @@
         });
     })
 </script>
-<label for="person">Select number of People:</label>
 <select name="person" id="person">
 <option value="1">1</option>
     <option value="2">2</option>
@@ -65,5 +64,6 @@
     <option value="8">8</option>
     <option value="9">9</option>
 </select>
+<label for="person">Select number of People:</label>
 </body>
 </html>

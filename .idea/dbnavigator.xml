@@ -57,6 +57,7 @@
           <charset value="UTF-8" />
           <auto-commit value="false" />
           <ddl-file-binding value="true" />
+          <database-logging value="false" />
           <environment-type value="default" />
           <idle-time-to-disconnect value="30" />
           <max-connection-pool-size value="7" />

@@ -1,5 +1,7 @@
 package Hotel;
 
+import java.util.Date;
+
 /**
  * Created by abner on 11/1/14.
  */
@@ -8,12 +10,17 @@ public class User {
     private String firstname;
     private String lastname;
     private String address;
+    private String city;
+    private String state;
+    private String zip;
     private String email;
     private String phone;
     private String username; //for employee login
     private String password; //for employee login
-    private int checkin;
-    private int checkout;
+    private Date checkin;
+    private Date checkout;
+    private String RoomType;
+    private int NumOfPeople;
     private int creditCardNum;
     private int creditCardMonth;
     private int creditCardYear;
@@ -21,11 +28,15 @@ public class User {
 
     public boolean isValid; //to authenticate employee login
 
-    public User(String f, String l, String a, String e, int ci, int co, int ccn, int ccm, int ccy, int cccvv) {
+    public User(String f, String l, String a, String c, String s, String z, String p, String e, Date ci, Date co, int ccn, int ccm, int ccy, int cccvv) {
 
         firstname = f;
         lastname = l;
         address = a;
+        city = c;
+        state = s;
+        zip = z;
+        phone = p;
         email = e;
         checkin = ci;
         checkout = co;
@@ -41,9 +52,13 @@ public class User {
         firstname = null;
         lastname = null;
         address = null;
+        city = null;
+        state = null;
+        zip = null;
+        phone = null;
         email = null;
-        checkin = 0;
-        checkout = 0;
+        checkin = null;
+        checkout = null;
         creditCardNum = 0;
         creditCardMonth = 0;
         creditCardYear = 0;
@@ -99,19 +114,19 @@ public class User {
         this.password = password;
     }
 
-    public int getCheckin() {
+    public Date getCheckin() {
         return checkin;
     }
 
-    public void setCheckin(int checkin) {
+    public void setCheckin(Date checkin) {
         this.checkin = checkin;
     }
 
-    public int getCheckout() {
+    public Date getCheckout() {
         return checkout;
     }
 
-    public void setCheckout(int checkout) {
+    public void setCheckout(Date checkout) {
         this.checkout = checkout;
     }
 
@@ -155,11 +170,53 @@ public class User {
         this.phone = phone;
     }
 
+
+    public String getCity() {
+        return city;
+    }
+
+    public void setCity(String city) {
+        this.city = city;
+    }
+
+    public String getState() {
+        return state;
+    }
+
+    public void setState(String state) {
+        this.state = state;
+    }
+
+    public String getZip() {
+        return zip;
+    }
+
+    public void setZip(String zip) {
+        this.zip = zip;
+    }
+
+
     public boolean isValid() {
         return isValid;
     }
 
     public void setValid(boolean isValid) {
         this.isValid = isValid;
+    }
+
+    public String getRoomType() {
+        return RoomType;
+    }
+
+    public void setRoomType(String roomType) {
+        RoomType = roomType;
+    }
+
+    public int getNumOfPeople() {
+        return NumOfPeople;
+    }
+
+    public void setNumOfPeople(int numOfPeople) {
+        NumOfPeople = numOfPeople;
     }
 }
