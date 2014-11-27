@@ -4,8 +4,8 @@ import Database_Connection.ConnectionManager;
 import Hotel.User;
 
 import java.sql.*;
-import java.util.ArrayList;
-import java.util.List;
+import java.sql.Date;
+import java.util.*;
 
 /**
  * Created by abner on 11/22/14.
@@ -20,29 +20,55 @@ public class CustomerDAO {
     }
 
     public User Reservation(User customer){
+        //this will print in the console to keep track what's the input in MySql
         String FirstName = customer.getFirstname();
         String LastName = customer.getLastname();
-        String insertQuery = "INSERT into Customer(LastName, FirstName, StreetAddress, City, state, zip, email, phone, checkin, checkout, RoomType, NumOfPeople) values(?,?,?,?,?,?,?,?,?,?,?,?)";
+        String phone = customer.getPhone();
+        String email = customer.getEmail();
+        String address = customer.getAddress();
+        String City = customer.getCity();
+        String state = customer.getState();
+        String zip = customer.getZip();
+        Date checkin = new java.sql.Date(customer.getCheckin().getTime());
+        Date checkout = new java.sql.Date(customer.getCheckout().getTime());
+        String RoomType =  customer.getRoomType();
+        int NumOfPeople = customer.getNumOfPeople();
+        String insertQuery = "INSERT into Customer(id,LastName, FirstName, StreetAddress, City, state, zip, email, phone, checkin, checkout, RoomType, NumOfPeople,CreditCard,Expiration,SecurityCode,Total)" + " values(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
 
-        System.out.println("Your First Name is " + FirstName);
-        System.out.println("Your Last Name is " + LastName);
+        System.out.println("First Name: " + FirstName);
+        System.out.println("Last Name: " + LastName);
+        System.out.println("Phone Number: " + phone);
+        System.out.println("email: " + email);
+        System.out.println("Street address: " + address);
+        System.out.println("City: " + City);
+        System.out.println("State: " + state);
+        System.out.println("Zip: " + zip);
+        System.out.println("CheckIn: " + checkin);
+        System.out.println("CheckOut: " + checkout);
+        System.out.println("Room Type: " + RoomType);
+        System.out.println("Number of Adults: " + NumOfPeople);
         try{
             //connect to database
             connection = ConnectionManager.getConnection();
             preparedStatement = connection.prepareStatement(insertQuery);
 
-            preparedStatement.setString(1, customer.getLastname());
-            preparedStatement.setString(2, customer.getFirstname());
-            preparedStatement.setString(3, customer.getAddress());
-            preparedStatement.setString(4, customer.getCity());
-            preparedStatement.setString(5, customer.getState());
-            preparedStatement.setString(6, customer.getZip());
-            preparedStatement.setString(7, customer.getEmail());
-            preparedStatement.setString(8, customer.getPhone());
-            preparedStatement.setDate(9, new java.sql.Date(customer.getCheckin().getTime()));
-            preparedStatement.setDate(10, new java.sql.Date(customer.getCheckout().getTime()));
-            preparedStatement.setString(11, customer.getRoomType());
-
+            preparedStatement.setInt(1,1);
+            preparedStatement.setString(2, customer.getLastname());
+            preparedStatement.setString(3, customer.getFirstname());
+            preparedStatement.setString(4, customer.getAddress());
+            preparedStatement.setString(5, customer.getCity());
+            preparedStatement.setString(6, customer.getState());
+            preparedStatement.setString(7, customer.getZip());
+            preparedStatement.setString(8, customer.getEmail());
+            preparedStatement.setString(9, customer.getPhone());
+            preparedStatement.setDate(10, new java.sql.Date(customer.getCheckin().getTime()));
+            preparedStatement.setDate(11, new java.sql.Date(customer.getCheckout().getTime()));
+            preparedStatement.setString(12, customer.getRoomType());
+            preparedStatement.setInt(13, customer.getNumOfPeople());
+            preparedStatement.setInt(14, customer.getCreditCardNum());
+            preparedStatement.setInt(15, customer.getExpiration());
+            preparedStatement.setInt(16, customer.getSecurityCode());
+            preparedStatement.setInt(17, customer.getTotal());
             preparedStatement.executeUpdate();
         }catch(Exception e){
             System.out.println(e);

@@ -22,10 +22,9 @@ public class User {
     private String RoomType;
     private int NumOfPeople;
     private int creditCardNum;
-    private int creditCardMonth;
-    private int creditCardYear;
-    private int creditCardCvv;
-
+    private int expiration;
+    private int SecurityCode;
+    private int Total;
     public boolean isValid; //to authenticate employee login
 
     public User(String f, String l, String a, String c, String s, String z, String p, String e, Date ci, Date co, int ccn, int ccm, int ccy, int cccvv) {
@@ -41,10 +40,6 @@ public class User {
         checkin = ci;
         checkout = co;
         creditCardNum = ccn;
-        creditCardMonth = ccm;
-        creditCardYear = ccy;
-        creditCardCvv = cccvv;
-
     }
 
     public User() {
@@ -60,10 +55,6 @@ public class User {
         checkin = null;
         checkout = null;
         creditCardNum = 0;
-        creditCardMonth = 0;
-        creditCardYear = 0;
-        creditCardCvv = 0;
-
     }
 
     public String getFirstname() {
@@ -138,30 +129,6 @@ public class User {
         this.creditCardNum = creditCardNum;
     }
 
-    public int getCreditCardMonth() {
-        return creditCardMonth;
-    }
-
-    public void setCreditCardMonth(int creditCardMonth) {
-        this.creditCardMonth = creditCardMonth;
-    }
-
-    public int getCreditCardYear() {
-        return creditCardYear;
-    }
-
-    public void setCreditCardYear(int creditCardYear) {
-        this.creditCardYear = creditCardYear;
-    }
-
-    public int getCreditCardCvv() {
-        return creditCardCvv;
-    }
-
-    public void setCreditCardCvv(int creditCardCvv) {
-        this.creditCardCvv = creditCardCvv;
-    }
-
     public String getPhone() {
         return phone;
     }
@@ -169,7 +136,6 @@ public class User {
     public void setPhone(String phone) {
         this.phone = phone;
     }
-
 
     public String getCity() {
         return city;
@@ -195,7 +161,6 @@ public class User {
         this.zip = zip;
     }
 
-
     public boolean isValid() {
         return isValid;
     }
@@ -218,5 +183,29 @@ public class User {
 
     public void setNumOfPeople(int numOfPeople) {
         NumOfPeople = numOfPeople;
+    }
+
+    public int getExpiration() {
+        return expiration;
+    }
+
+    public void setExpiration(int expiration) {
+        this.expiration = expiration;
+    }
+
+    public int getSecurityCode() {
+        return SecurityCode;
+    }
+
+    public void setSecurityCode(int securityCode) {
+        SecurityCode = securityCode;
+    }
+
+    public int getTotal() {
+        return Total;
+    }
+
+    public void setTotal(int total) {
+        Total = total;
     }
 }

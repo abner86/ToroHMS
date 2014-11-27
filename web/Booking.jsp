@@ -58,11 +58,11 @@
     </fieldset>
     <fieldset id="form3" class="form">
         <h2 class="title">Reservation</h2>
-        <input type="text" style="width:110px;" id="checkin" placeholder="CheckIn"/>
-        <input type="text" style="width:110px;" id="checkout" placeholder="CheckOut"/>
+        <input type="text" style="width:110px;" name="checkin" id="checkin" placeholder="CheckIn"/>
+        <input type="text" style="width:110px;" name="checkout" id="checkout" placeholder="CheckOut"/>
         <br/>
         <label for="RoomType">Room Type</label><!-- clearfix--><div class="clear"></div><!---/clearfix --->
-        <select id="RoomType" style="width:95px;"name="Roomtype">
+        <select id="RoomType" style="width:95px;" name="RoomType">
             <option value="single">Single</option>
             <option value="double">Double</option>
             <option value="suite">Suite</option>

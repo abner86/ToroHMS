@@ -23,9 +23,6 @@ $(document).ready(function(){
         'RoomType': 'Room Type',
         'NumOfPeople': 'Number of Adults'
     };
-    $("fieldset").submit(function(){
-        return false;
-    });
     $(".next").click(function(){
         if(animating) return false;
         animating = true;
@@ -115,8 +112,9 @@ $(document).ready(function(){
         });
     });
 
-    $(".submit").click(function(){
+    $(".submit").submit(function(){
         //send information to server/database
-        alert('Data Sent');
+        alert('Data Sent')
+        return false;
     });
 });
