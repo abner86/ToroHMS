@@ -1,0 +1,65 @@
+/*font*/
+@import url(http://fonts.googleapis.com/css?family=Montserrat);
+/* this will put a background image on webpage*/
+html {
+    height: 100%;
+    /*image only BG fallback*/
+    background: url(/images/hotelbackground.jpeg);
+}
+body{
+    font-family: montserrat, arial, verdana, sans-serif;
+}
+
+.header{
+    padding: 2%;
+}
+/* start logo */
+.logo{
+    float: left;
+}
+/* start h_right */
+.h_right{
+    width: 66.3333%;
+    float:right;
+}
+/* start menu */
+.menu{
+    width:100%;
+    overflow: hidden;
+}
+.menu  li{
+    display: inline;
+
+}
+.menu  li a{
+    display: block;
+    color: #fff;
+    float:left;
+    line-height: 52px;
+    text-transform: capitalize;
+    font-size: 14px;
+    font-weight: bold;
+    width: 120px;
+    height: 55px;
+    text-decoration: none;
+    background: url('/images/nav-bg1.png') no-repeat left top;
+    font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+    text-align:center;
+    margin-right:2px;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+.menu  li.active a{
+    background: url('/images/nav-bg2.png') no-repeat left top;
+}
+.menu  li a:hover {
+    float: left;
+    background: url('/images/nav-bg2.png') no-repeat left top;
+}
+
+/* for user after login in */
+table span{
+    color: #060001;
+}

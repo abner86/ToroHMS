@@ -114,7 +114,7 @@ $(document).ready(function(){
 
     $(".submit").submit(function(){
         //send information to server/database
-        alert('Data Sent')
+        alert('Your Room has been Reserved, Your Credit Card will be charge after Checkout');
         return false;
     });
 });

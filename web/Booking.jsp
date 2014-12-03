@@ -13,6 +13,7 @@
     <title>Booking</title>
     <link rel="stylesheet" type="text/css" href="css/form_style.css"/>
     <link rel="stylesheet" href="//code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css">
+    <link type="text/css" rel="stylesheet" href="css/jquery-ui.css"/>
     <script type="text/javascript" src="http://code.jquery.com/jquery-2.0.2.js"></script>
     <script type="text/javascript" src="http://code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
     <script type="text/javascript" src="Scripts/bookingForm.js"></script>
