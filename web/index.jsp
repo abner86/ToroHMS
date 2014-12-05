@@ -6,6 +6,7 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page import="Hotel.Rooms.Reservation"%>
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -162,7 +163,8 @@
     <!--/slider -->
 </div>
 <!--start main -->
-<div class="main_bg">
+<!-- this needs to search for available room through servlet -->
+<div action="bookingServlet" method="POST" class="main_bg">
     <div class="wrap">
         <div class="online_reservation">
             <div class="b_room">

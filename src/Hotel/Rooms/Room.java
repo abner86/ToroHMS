@@ -9,8 +9,8 @@ import Database_Connection.ConnectionManager;
 import java.sql.*;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-
-abstract class Room {
+//change class from abnstract to public
+public class Room {
     static int roomNumber;
     String roomType;
     float rates;
