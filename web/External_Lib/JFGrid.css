@@ -30,7 +30,6 @@ time, mark, audio, video {
     margin: 0;
     padding: 0;
     border: 0;
-    font-size: 100%;
     font: inherit;
 }
 
@@ -79,7 +78,7 @@ img,object,embed,iframe {
 */
 .container { margin: 0; padding: 0; }
 .row { width: 940px; max-width: 100%;  margin: 0 auto; }
-.row .row { min-width: 0px; }
+.row .row { min-width: 0; }
 .row:before, .row:after { content: ''; display: table; }
 .row:after { clear: both; }
 .row { zoom: 1; }

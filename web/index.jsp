@@ -15,19 +15,19 @@
     <!--css libraries/files---some of this files are external libraries that are necessary for the website-->
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
     <link href="css/toro_style.css" rel="stylesheet" type="text/css" media="all"/>
-    <link rel="stylesheet" href="css/fwslider.css" media="all">
+    <link rel="stylesheet" href="External_Lib/fwslider.css" media="all">
     <link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css"/>
-    <link type="text/css" rel="stylesheet" href="css/JFGrid.css"/>
-    <link type="text/css" rel="stylesheet" href="css/JFFormStyle-1.css"/>
-    <link type="text/css" rel="stylesheet" href="css/jquery-ui.css"/>
+    <link type="text/css" rel="stylesheet" href="External_Lib/JFGrid.css"/>
+    <link type="text/css" rel="stylesheet" href="External_Lib/JFFormStyle-1.css"/>
+    <link type="text/css" rel="stylesheet" href="External_Lib/jquery-ui.css"/>
     <!--Jquery/Jquery-UI libraries-->
     <script src="//cdn.jsdelivr.net/css3-mediaqueries/0.1/css3-mediaqueries.js"></script>
     <script src="//cdn.jsdelivr.net/css3-mediaqueries/0.1/css3-mediaqueries.min.js"></script>
     <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
-    <script src="Scripts/fwslider.js"></script>
-    <script type="text/javascript" src="Scripts/JFCore.js"></script>
-    <script type="text/javascript" src="Scripts/JFForms.js"></script>
+    <script src="External_Lib/fwslider.js"></script>
+    <script type="text/javascript" src="External_Lib/JFCore.js"></script>
+    <script type="text/javascript" src="External_Lib/JFForms.js"></script>
     <script type="text/javascript" src="http://code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
     <!---datepicker---->
     <script>
@@ -51,8 +51,8 @@
     <script>
         $(function () {
             var pull = $('#pull');
-            menu = $('nav ul');
-            menuHeight = menu.height();
+            var menu = $('nav ul');
+            var menuHeight = menu.height();
 
             $(pull).on('click', function (e) {
                 e.preventDefault();
@@ -238,7 +238,7 @@
         <div class="grids_of_3">
             <div class="grid1_of_3">
                 <div class="grid1_of_3_img">
-                    <a href="details.html">
+                    <a href="details.jps">
                         <img src="images/Rsingle_4.jpg" alt=""/>
                         <span class="next"> </span>
                     </a>
@@ -252,7 +252,7 @@
             </div>
             <div class="grid1_of_3">
                 <div class="grid1_of_3_img">
-                    <a href="details.html">
+                    <a href="details.jps">
                         <img src="images/Rsingle_3.jpg" alt=""/>
                         <span class="next"> </span>
                     </a>
@@ -266,7 +266,7 @@
             </div>
             <div class="grid1_of_3">
                 <div class="grid1_of_3_img">
-                    <a href="details.html">
+                    <a href="details.jps">
                         <img src="images/Rsuite_3.jpg" alt=""/>
                         <span class="next"> </span>
                     </a>

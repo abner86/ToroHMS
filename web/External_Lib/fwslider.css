@@ -7,7 +7,7 @@
 #fwslider .slide {
     display: none;
     position: absolute;
-    top:0px;
+    top:0;
     left:0;
     z-index: 0;
     width:100%;
@@ -28,7 +28,7 @@
     width: 60px;
 	height: 60px;
 	float: left;
-    background: url(/images/sliderarrows.png) no-repeat -60px 0px;
+    background: url(/images/sliderarrows.png) no-repeat -60px 0;
     cursor: pointer;
 }
 #fwslider .slideNext {
@@ -41,7 +41,7 @@
     width: 60px;
 	height: 60px;
 	float: left;
-    background: url(/images/sliderarrows.png) no-repeat 0px 0px;
+    background: url(/images/sliderarrows.png) no-repeat 0 0;
     cursor: pointer;
 }
 
@@ -65,7 +65,7 @@
 
 #fwslider .progress {
     height:4px;
-    width:0%;
+    width:0;
     background-color:#2C3E50;
     float:left;
 }
@@ -104,7 +104,7 @@ h4 i.bg{
 	height: 80px;
 	position: absolute;
 	right: -38px;
-	top: 0px;
+	top: 0;
 }
 
 #fwslider .title1{  
@@ -127,13 +127,13 @@ h5 i.bg{
 	height: 58px;
 	position: absolute;
 	right: -34px;
-	top: 0px;
+	top: 0;
 }
 #fwslider .description { /* Slider Description Style */
     opacity: 0;
     color:#ffffff;
     font-size: 1.5em;
-    padding:0px 0 1em;
+    padding:0 0 1em;
     clear:both;
    	text-align:center;
 }

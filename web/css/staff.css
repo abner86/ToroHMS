@@ -59,7 +59,30 @@ body{
     background: url('/images/nav-bg2.png') no-repeat left top;
 }
 
-/* for user after login in */
-table span{
+#tform table{
+    background: rgba(48, 139, 196, 0.83);
+    border: 0 solid;
+    border-radius: 3px;
+    box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+    padding: 20px 30px;
+    box-sizing: border-box;
+    width: 100%;
+    margin-top: 0;
+    margin-right: 0;
+    margin-left: 0;
+    margin-bottom: 0;
+    /*stacking fieldset above each other*/
+    position: relative;
+}
+.title {
+    font-size: 16px;
+    text-transform: uppercase;
     color: #060001;
+    margin-bottom: 10px;
+    margin-top: 10%;
+    margin-left: 40%;
+}
+
+#tform h3 span {
+    color: #ae1107;
 }

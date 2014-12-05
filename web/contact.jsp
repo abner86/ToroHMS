@@ -7,10 +7,10 @@
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
     <link href="css/toro_style.css" rel="stylesheet" type="text/css" media="all"/>
     <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <link type="text/css" rel="stylesheet" href="css/JFGrid.css"/>
-    <link type="text/css" rel="stylesheet" href="css/JFFormStyle-1.css"/>
-    <script type="text/javascript" src="Scripts/JFCore.js"></script>
-    <script type="text/javascript" src="Scripts/JFForms.js"></script>
+    <link type="text/css" rel="stylesheet" href="External_Lib/JFGrid.css"/>
+    <link type="text/css" rel="stylesheet" href="External_Lib/JFFormStyle-1.css"/>
+    <script type="text/javascript" src="External_Lib/JFCore.js"></script>
+    <script type="text/javascript" src="External_Lib/JFForms.js"></script>
     <!-- key to hide the watermark on the web server -->
     <script type="text/javascript">
         (function () {

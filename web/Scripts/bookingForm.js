@@ -7,7 +7,6 @@ $(document).ready(function(){
     var current_fs, next_fs, previous_fs; //fieldsets
     var left, opacity, scale; //fieldset properties which we will animate
     var animating; //flag to prevent quick multi-click glitches
-
     var values = {
         //id         :  values
         'FirstName': 'First Name',
@@ -23,6 +22,7 @@ $(document).ready(function(){
         'RoomType': 'Room Type',
         'NumOfPeople': 'Number of Adults'
     };
+    //input/saving data for the next form
     $(".next").click(function(){
         if(animating) return false;
         animating = true;
@@ -58,7 +58,7 @@ $(document).ready(function(){
         });
 
         //preparing form5
-        var fields = [$('#FirstName').val() + ' ' + $('#LastName').val(),
+         fields = [$('#FirstName').val() + ' ' + $('#LastName').val(),
             $('#phone').val(),
             $('#email').val(),
             $('#StreetAddress').val(),

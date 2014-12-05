@@ -50,6 +50,9 @@ public class BookingServlet extends HttpServlet {
             }
             user.setRoomType(request.getParameter("RoomType"));
             user.setNumOfPeople(Integer.parseInt(request.getParameter("NumOfPeople")));
+            user.setCreditCardNum(Integer.parseInt(request.getParameter("CreditCard")));
+            user.setExpiration(Integer.parseInt(request.getParameter("Expiration")));
+            user.setSecurityCode(Integer.parseInt(request.getParameter("SecurityCode")));
 
             user = customer.Reservation(user);
 
@@ -61,8 +64,5 @@ public class BookingServlet extends HttpServlet {
                 RequestDispatcher rd=request.getRequestDispatcher("Booking.jsp");
                 rd.include(request,response);
             }
-/*            RequestDispatcher view = request.getRequestDispatcher("Booking.jsp");
-            request.setAttribute("users", customer.getAllUsers());
-            view.forward(request, response);*/
     }
 }

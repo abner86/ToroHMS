@@ -13,10 +13,11 @@
     <title>Booking</title>
     <link rel="stylesheet" type="text/css" href="css/form_style.css"/>
     <link rel="stylesheet" href="//code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css">
-    <link type="text/css" rel="stylesheet" href="css/jquery-ui.css"/>
+    <link type="text/css" rel="stylesheet" href="External_Lib/jquery-ui.css"/>
     <script type="text/javascript" src="http://code.jquery.com/jquery-2.0.2.js"></script>
     <script type="text/javascript" src="http://code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
     <script type="text/javascript" src="Scripts/bookingForm.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js" type="text/javascript"></script>
     <script>
         //calendar scrip
         $(function () {
@@ -30,7 +31,7 @@
 <body>
 <!--this is a multistep form for reserving a room -->
 <form action="bookingServlet" method="POST" id="msform">
-    <!-- progressbar -->
+<!-- progressbar -->
     <ul id="progress_bar">
         <li class="active">Contact Information</li>
         <li>Address</li>

@@ -1,10 +1,10 @@
 /* styling file for index.jsp */
 /* reset */
-html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,dl,dt,dd,ol,nav ul,nav li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;}
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,dl,dt,dd,ol,nav ul,nav li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font:inherit;vertical-align:baseline;}
 article, aside, details, figcaption, figure,footer, header, hgroup, menu, nav, section {display: block;}
 ol,ul{list-style:none;margin:0;padding:0;}
 blockquote,q{quotes:none;}
-blockquote:before,blockquote:after,q:before,q:after{content:'';content:none;}
+blockquote:before,blockquote:after,q:before,q:after{content:'';}
 table{border-collapse:collapse;border-spacing:0;}
 /* start editing from here */
 a{text-decoration:none;}
@@ -176,10 +176,10 @@ body{
 .b_room{
     margin: 2% 2%;
     display: inline-flex;
-    box-shadow: 0px 0px 4px rgb(97, 97, 97);
-    -webkit-box-shadow: 0px 0px 4px rgb(97, 97, 97);
-    -moz-box-shadow: 0px 0px 4px rgb(97, 97, 97);
-    -o-box-shadow: 0px 0px 4px rgb(97, 97, 97);
+    box-shadow: 0 0 4px rgb(97, 97, 97);
+    -webkit-box-shadow: 0 0 4px rgb(97, 97, 97);
+    -moz-box-shadow: 0 0 4px rgb(97, 97, 97);
+    -o-box-shadow: 0 0 4px rgb(97, 97, 97);
 }
 .booking_room{
     padding: 2%;
@@ -377,7 +377,7 @@ select option{
 }
 .soc_icons ul li a{
     display: block;
-    background: url(/images/soc_icons.png) no-repeat 0px 0px;
+    background: url(/images/soc_icons.png) no-repeat 0 0;
     width: 46px;
     height: 46px;
     -webkit-transition: all 0.3s ease-in-out;
@@ -386,19 +386,19 @@ select option{
     transition: all 0.3s ease-in-out;
 }
 .soc_icons ul li a.icon1{
-    background-position:0px 0px;
+    background-position:0 0;
 }
 .soc_icons ul li a.icon2{
-    background-position:-55px 0px;
+    background-position:-55px 0;
 }
 .soc_icons ul li a.icon3{
-    background-position:-110px 0px;
+    background-position:-110px 0;
 }
 .soc_icons ul li a.icon4{
-    background-position:-166px 0px;
+    background-position:-166px 0;
 }
 .soc_icons ul li a.icon5{
-    background-position:-224px 0px;
+    background-position:-224px 0;
 }
 .soc_icons ul li a:hover{
     zoom: 1;
@@ -495,7 +495,7 @@ p.para{
 }
 .s_nav1 li a{
     display: block;
-    background: url('/images/s_icons.png') no-repeat 0px 0px;
+    background: url('/images/s_icons.png') no-repeat 0 0;
     width: 32px;
     height: 32px;
     -webkit-transition: all 0.3s ease-in-out;
@@ -504,16 +504,16 @@ p.para{
     transition: all 0.3s ease-in-out;
 }
 .s_nav1 li a.icon1{
-    background-position:0px 0px;
+    background-position:0 0;
 }
 .s_nav1 li a.icon2{
-    background-position:-42px 0px;
+    background-position:-42px 0;
 }
 .s_nav1 li a.icon3{
-    background-position:-84px 0px;
+    background-position:-84px 0;
 }
 .s_nav1 li a.icon4{
-    background-position:-125px 0px;
+    background-position:-125px 0;
 }
 .s_nav1 li a:hover{
     zoom: 1;
@@ -871,7 +871,7 @@ span.next:hover {
         margin-left: 15px;
     }
     .f_nav li a {
-        padding: 0 0px;
+        padding: 0 0;
     }
 }
 @media only screen and (max-width: 768px) {
@@ -935,12 +935,12 @@ span.next:hover {
     .content {
         float: none;
         width: 100%;
-        margin-right: 0%;
+        margin-right: 0;
     }
     .sidebar {
         float: none;
         width: 100%;
-        padding-left: 0%;
+        padding-left: 0;
         border-left: none;
     }
     .sidebar h4 {
@@ -951,7 +951,7 @@ span.next:hover {
         width: 100%;
     }
     .sel_room.left {
-        margin-left: 0%;
+        margin-left: 0;
     }
     .service_list li {
         width: 48.3333%;
@@ -987,7 +987,7 @@ span.next:hover {
         width: 96% !important;
     }
     .reservation ul li.left {
-        margin-left: 0px;
+        margin-left: 0;
     }
     .reservation ul li.span1_of_2 {
         width: 49.33333%;
@@ -999,7 +999,7 @@ span.next:hover {
     .grid1_of_3 {
         float: left;
         width: 100%;
-        margin-left: 0%;
+        margin-left: 0;
     }
     .grid1_of_3 h4 a {
         margin: 2% 0;
@@ -1020,7 +1020,7 @@ span.next:hover {
     }
     .contact_left {
         float: none;
-        margin-right: 0%;
+        margin-right: 0;
         width: 100%;
     }
     .contact_right {
@@ -1042,7 +1042,7 @@ span.next:hover {
         width: 70.333333% !important;
     }
     .online_reservation {
-        margin-top: 0px;
+        margin-top: 0;
     }
     .date_btn {
         margin: 0 0 20px;
@@ -1078,13 +1078,13 @@ span.next:hover {
     }
     .reservation ul li.span1_of_3 {
         width: 100%;
-        margin-left: 0px;
+        margin-left: 0;
     }
     .book_date input[type="text"] {
         width: 93% !important;
     }
     .soc_icons ul li {
-        margin-left: 0px;
+        margin-left: 0;
     }
     .grids_of_img {
         float: none;
@@ -1093,12 +1093,12 @@ span.next:hover {
     .grids_of_para {
         float: none;
         width: 100%;
-        margin-left: 0%;
+        margin-left: 0;
     }
     .span2_of_1 {
         float: none;
         width: 100%;
-        margin-left: 0%;
+        margin-left: 0;
     }
     .res_btn form input[type="submit"] {
         width: 60% !important;
