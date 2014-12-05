@@ -4,8 +4,8 @@ import Database_Connection.ConnectionManager;
 import Hotel.User;
 
 import java.sql.*;
-import java.sql.Date;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created by abner on 11/22/14.
@@ -38,9 +38,8 @@ public class CustomerDAO {
         int Expiration = customer.getExpiration();
         int SecurityCode = customer.getSecurityCode();
         int Total = customer.getTotal();
-
+        String date = "SELECT DATEDIFF(checkout,checkin) AS DateDiff FROM Customer;";
         String insertQuery = "INSERT into Customer(LastName, FirstName, StreetAddress, City, state, zip, email, phone, checkin, checkout, RoomType, NumOfPeople,CreditCard,Expiration,SecurityCode,Total) values(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
-
         System.out.println("First Name: " + FirstName);
         System.out.println("Last Name: " + LastName);
         System.out.println("Phone Number: " + phone);
@@ -76,10 +75,9 @@ public class CustomerDAO {
             preparedStatement.setInt(13, customer.getCreditCardNum());
             preparedStatement.setInt(14, customer.getExpiration());
             preparedStatement.setInt(15, customer.getSecurityCode());
-            preparedStatement.setInt(16, 100);
+            preparedStatement.setInt(16, 0);
             preparedStatement.executeUpdate();
 
-            //using
         }catch(Exception e){
             e.printStackTrace();
         }finally{
