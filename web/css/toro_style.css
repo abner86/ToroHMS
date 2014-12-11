@@ -448,34 +448,34 @@ select option{
 .sidebar{
     float: left;
     width: 24.333333%;
-    padding-left: 3.3333%;
-    border-left: 1px solid rgb(184, 184, 184);
+    background: rgba(48, 139, 196, 0.83);
+    padding:2%;
 }
 .room {
-    padding-bottom: 6%;
-    border-bottom: 2px dashed rgb(109, 109, 109);
+    padding: 2%;
+    background: rgba(48, 139, 196, 0.83);
 }
 .room h4{
     text-transform: capitalize;
-    font-size: 1.5em;
+    font-size: 2.0em;
     color: #252525;
     font-weight: 100;
     margin-bottom: 15px;
 }
 p.para{
     font-size: 0.8725em;
-    color: #6b6b6b;
+    color: #060001;
     line-height: 1.8em;
 }
 .sidebar h4{
     text-transform: capitalize;
     font-size: 1em;
-    color: #252525;
+    color: #060001;
     font-weight: 600;
     margin: 10% 0 4%;
 }
 .s_nav li{
-    border-bottom: 1px solid rgb(194, 194, 194);
+    border-bottom: 1px solid rgba(174, 17, 7, 0.84);
     margin: 15px 0;
 }
 .s_nav li a{
@@ -483,7 +483,7 @@ p.para{
     padding:4px 0;
     text-transform: capitalize;
     font-size: 0.8725em;
-    color: #6b6b6b;
+    color: #060001;
     line-height: 1.6em;
 }
 .s_nav li a:hover{
@@ -528,10 +528,12 @@ p.para{
 .grids_of_2{
     display: block;
     margin: 8% 0;
+    background: rgba(48, 139, 196, 0.83);
+    padding: 2%;
 }
 .grids_of_img{
     float: left;
-    width: 22.33333%;
+    width: 22.33333%
 }
 .grids_of_para{
     float: left;

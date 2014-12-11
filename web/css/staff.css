@@ -9,7 +9,6 @@ html {
 body{
     font-family: montserrat, arial, verdana, sans-serif;
 }
-
 .header{
     padding: 2%;
 }
@@ -54,11 +53,9 @@ body{
 .menu  li.active a{
     background: url('/images/nav-bg2.png') no-repeat left top;
 }
-.menu  li a:hover {
-    float: left;
-    background: url('/images/nav-bg2.png') no-repeat left top;
+.menu  li a:hover{    float:left;
+    background: url('/images/nav-bg2.png')no-repeat left top;
 }
-
 #tform table{
     background: rgba(48, 139, 196, 0.83);
     border: 0 solid;

@@ -9,7 +9,7 @@ import java.util.*;
 /**
  * Created by kosu on 11/20/2014.
  */
-public class Tester {
+public class Tester extends Room{
 
     /*successfully adding dates without duplicate
     *
@@ -23,10 +23,9 @@ public class Tester {
     public static void main(String[] args) {
 
 
-        Hotel.Rooms.Room rt = new Hotel.Rooms.Single(101);
+        Hotel.Rooms.Room rt = new Hotel.Rooms.Single();
 
-        Hotel.Rooms.Room rt2 = new Hotel.Rooms.Single(102);
-        Hotel.Rooms.Room rt3 = new Hotel.Rooms.Single(103);
+
         //didnt need 3 obj.  need 3 tables.
         //need loop that generate a availability test that goes from one room to the other.
 

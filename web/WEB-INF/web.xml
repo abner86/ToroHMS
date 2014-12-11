@@ -15,14 +15,14 @@
         <welcome-file>Login.jsp</welcome-file>
     </welcome-file-list>
     <servlet>
-        <servlet-name>BookingServlet</servlet-name>
+        <servlet-name>booking</servlet-name>
         <servlet-class>Servlet.BookingServlet</servlet-class>
     </servlet>
     <servlet-mapping>
-        <servlet-name>BookingServlet</servlet-name>
+        <servlet-name>booking</servlet-name>
         <url-pattern>/bookingServlet</url-pattern>
     </servlet-mapping>
     <welcome-file-list>
-        <welcome-file>index.jsp</welcome-file>
+        <welcome-file>booking.jsp</welcome-file>
     </welcome-file-list>
 </web-app>

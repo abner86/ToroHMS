@@ -8,7 +8,7 @@ public class Single extends Hotel.Rooms.Room {
     // static int roomCounter=101;
     String x="";
 
-    public Single(int x) {
+    public Single() {
         this.setRoomRates((float) 69.99);
         setMaxPeople(2);
         setRoomType("Single");

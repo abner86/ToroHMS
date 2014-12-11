@@ -6,11 +6,12 @@ package Hotel.Rooms;
 
 import Database_Connection.ConnectionManager;
 
-import java.sql.*;
-import java.util.logging.Level;
-import java.util.logging.Logger;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
 //change class from abnstract to public
 public class Room {
+    private static Connection con = null;
     static int roomNumber;
     String roomType;
     float rates;
@@ -18,6 +19,10 @@ public class Room {
     int indexCounter;//for table
     // static int roomCounter=0;
     static boolean vacacity = true;
+    private static String url = "jdbc:mysql://localhost:3306/ToroHMS";
+    private static String dbUser = "abnerb86";
+    private static String dbPass = "adriab2005";
+    private static String driver = "com.mysql.jdbc.Driver";
     static Hotel.Rooms.Reservation r = new Reservation();
 
 
@@ -53,7 +58,7 @@ public class Room {
         Reservation.reserveR(sdate, edate, roomNumber);
     }
     public static void addTable(String x) {
-        Connection con = null;
+        //Connection con = null;
         PreparedStatement pst = null;
         try {
 
@@ -68,8 +73,9 @@ public class Room {
             pst.executeUpdate();
 
         } catch (SQLException ex) {
-            Logger lgr = Logger.getLogger(Room.class.getName());
-            lgr.log(Level.SEVERE, ex.getMessage(), ex);
+            ex.printStackTrace();
+            //Logger lgr = Logger.getLogger(Room.class.getName());
+            //lgr.log(Level.SEVERE, ex.getMessage(), ex);
 
         } finally {
 
@@ -82,8 +88,9 @@ public class Room {
                 }
 
             } catch (SQLException ex) {
-                Logger lgr = Logger.getLogger(Room.class.getName());
-                lgr.log(Level.SEVERE, ex.getMessage(), ex);
+                ex.printStackTrace();
+                //Logger lgr = Logger.getLogger(Room.class.getName());
+                //lgr.log(Level.SEVERE, ex.getMessage(), ex);
             }
         }
     }

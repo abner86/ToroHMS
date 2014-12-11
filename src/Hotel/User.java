@@ -24,7 +24,7 @@ public class User {
     private int creditCardNum;
     private int expiration;
     private int SecurityCode;
-    private int Total;
+    private Double Total;
     public boolean isValid; //to authenticate employee login
 
     public User(String f, String l, String a, String c, String s, String z, String p, String e, Date ci, Date co, int ccn, int ccm, int ccy, int cccvv) {
@@ -201,11 +201,11 @@ public class User {
         SecurityCode = securityCode;
     }
 
-    public int getTotal() {
+    public Double getTotal() {
         return Total;
     }
 
-    public void setTotal(int total) {
+    public void setTotal(Double total) {
         Total = total;
     }
 }

@@ -92,7 +92,7 @@
         <input type="text" name="Expiration" id="Expiration" placeholder="expiration"/>
         <input type="text" name="SecurityCode" id="SecurityCode" placeholder="Security Code"/>
         <input type="button" name="previous" class="previous action-button" value="Previous"/>
-        <input type="button" name="next" class="next action-button" value="next"/>
+        <input type="button" name="next" class="next action-button" value="Next"/>
     </fieldset>
     <fieldset id="form5" class="form">
         <h2 class="title">Review</h2>
@@ -108,6 +108,8 @@
             <tr><td>Check Out</td><td></td></tr>
             <tr><td>Room Type</td><td></td></tr>
             <tr><td>Number of Adults</td><td></td></tr>
+            <tr><td>
+                <input type="hidden" id="total" name="total"/>Total $</td><td></td></tr>
         </table>
         <input type="button" name="previous" class="previous action-button" value="Previous"/>
         <input type="submit" name="submit" id="submit" class="submit action-button" value="Submit"/>

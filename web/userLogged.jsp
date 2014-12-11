@@ -3,6 +3,7 @@
 <%@ page import="java.sql.Statement" %>
 <%@ page import="java.sql.Connection" %>
 <%@ page import="java.sql.ResultSet" %>
+<%@ page import="java.sql.SQLException" %>
 <%--
   Created by IntelliJ IDEA.
   User: abner
@@ -51,7 +52,7 @@
         </div>
         <div class="h_right">
             <ul class="menu">
-                <li><a href="index.jsp">hotel</a></li>
+                <li><a href="index.jsp">home</a></li>
                 <li><a href="Booking.jsp">reservation</a></li>
                 <li class="active"><a href="Login.jsp">Staff</a></li>
                 <li><a href="">check-In</a></li>
@@ -62,8 +63,20 @@
 </div>
     <%
         Connection connection = ConnectionManager.getConnection();
-        Statement statement = connection.createStatement();
-        ResultSet resultSet = statement.executeQuery("select * from Customer");
+        Statement statement = null;
+        try {
+            statement = connection.createStatement();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        ResultSet resultSet = null;
+        try {
+            if (statement != null) {
+                resultSet = statement.executeQuery("select * from Customer");
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
     %>
     <form id="tform">
         <table border=".2">
@@ -81,6 +94,7 @@
                 <th>Check-Out</th>
                 <th>Room</th>
                 <th>Adults</th>
+                <th>Total</th>
             </tr>
             <% while (resultSet.next()) { %>
             <tr>
@@ -108,8 +122,11 @@
                 </td>
                 <td><%= resultSet.getString(12)%>
                 </td>
+                <td><%= resultSet.getInt(16)%></td>
             </tr>
-            <% }%>
+            <% }try {
+} catch (Exception e) {
+}%>
         </table>
     </form>
 </body>

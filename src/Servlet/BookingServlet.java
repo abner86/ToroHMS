@@ -56,15 +56,16 @@ public class BookingServlet extends HttpServlet {
             user.setCreditCardNum(Integer.parseInt(request.getParameter("CreditCard")));
             user.setExpiration(Integer.parseInt(request.getParameter("Expiration")));
             user.setSecurityCode(Integer.parseInt(request.getParameter("SecurityCode")));
+            user.setTotal(Double.parseDouble(request.getParameter("total")));
 
             user = customer.Reservation(user);
 
             if (user.isValid()) {
                 HttpSession session = request.getSession(true);
                 session.setAttribute("customers", user);
-                response.sendRedirect("index.jsp");
+                response.sendRedirect("booking.jsp");
             } else {
-                RequestDispatcher rd=request.getRequestDispatcher("Booking.jsp");
+                RequestDispatcher rd=request.getRequestDispatcher("index.jsp");
                 rd.include(request,response);
             }
     }
