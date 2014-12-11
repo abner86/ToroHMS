@@ -1,7 +1,7 @@
 package Hotel.Rooms;
 
 /**
- * Created by abner on 12/4/14.
+ * Created by kosu on 12/4/2014.
  */
 /**
  * Created by kosu on 12/4/2014.

@@ -1,9 +1,8 @@
 package Hotel.Rooms;
 
 /**
- * Created by abner on 12/4/14.
+ * Created by kosu on 11/20/2014.
  */
-
 import java.util.*;
 
 /**

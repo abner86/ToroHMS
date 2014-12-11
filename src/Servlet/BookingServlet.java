@@ -1,6 +1,5 @@
 package Servlet;
 
-import Hotel.Rooms.Reservation;
 import Hotel.User;
 import Reservations.CustomerDAO;
 
@@ -20,12 +19,10 @@ import java.util.Date;
  */
 public class BookingServlet extends HttpServlet {
     private static final long serialVersionUID = 1L;
-    private CustomerDAO customer;
-    private Reservation reservation;
+    private final CustomerDAO customer;
     public BookingServlet(){
         super();
         customer = new CustomerDAO();
-        reservation = new Reservation();
     }
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
             User user = new User();

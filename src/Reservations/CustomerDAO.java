@@ -12,7 +12,7 @@ import java.util.List;
  */
 public class CustomerDAO {
     private Connection connection;
-    private static ResultSet resultSet = null;
+    private static final ResultSet resultSet = null;
     private static PreparedStatement preparedStatement = null;
     private static Statement statement = null;
 

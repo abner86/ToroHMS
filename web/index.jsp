@@ -163,7 +163,7 @@
 </div>
 <!--start main -->
 <!-- this needs to search for available room through servlet -->
-<div method="POST" class="main_bg">
+<div class="main_bg">
     <div class="wrap">
         <div class="online_reservation">
             <div class="b_room">
@@ -239,7 +239,7 @@
         <div class="grids_of_3">
             <div class="grid1_of_3">
                 <div class="grid1_of_3_img">
-                    <a href="details.jps">
+                    <a href="#">
                         <img src="images/Rsingle_4.jpg" alt=""/>
                         <span class="next"> </span>
                     </a>
@@ -253,7 +253,7 @@
             </div>
             <div class="grid1_of_3">
                 <div class="grid1_of_3_img">
-                    <a href="details.jps">
+                    <a href="#">
                         <img src="images/Rsingle_3.jpg" alt=""/>
                         <span class="next"> </span>
                     </a>
@@ -267,7 +267,7 @@
             </div>
             <div class="grid1_of_3">
                 <div class="grid1_of_3_img">
-                    <a href="details.jps">
+                    <a href="#">
                         <img src="images/Rsuite_3.jpg" alt=""/>
                         <span class="next"> </span>
                     </a>

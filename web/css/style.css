@@ -76,8 +76,8 @@ form h1:after {
     pointer-events: none;
     transform: rotate(70deg);
     -webkit-transform: rotate(70deg);
-    background: linear-gradient(50deg, rgba(255, 255, 255, 0.15), rgba(0, 0, 0, 0));
-    background-image: -webkit-linear-gradient(50deg, rgba(255, 255, 255, 0.05), rgba(0, 0, 0, 0)); /* For Safari */
+    /* For Safari */
+    background: -webkit-linear-gradient(50deg, rgba(255, 255, 255, 0.05), rgba(0, 0, 0, 0));
 
 }
 

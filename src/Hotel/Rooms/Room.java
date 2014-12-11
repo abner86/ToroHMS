@@ -3,7 +3,6 @@ package Hotel.Rooms;
 /**
  * Created by kosu on 11/20/2014.
  */
-
 import Database_Connection.ConnectionManager;
 
 import java.sql.Connection;
@@ -23,7 +22,7 @@ public class Room {
     private static String dbUser = "abnerb86";
     private static String dbPass = "adriab2005";
     private static String driver = "com.mysql.jdbc.Driver";
-    static Hotel.Rooms.Reservation r = new Reservation();
+    static final Hotel.Rooms.Reservation r = new Reservation();
 
 
     float getPrice() {

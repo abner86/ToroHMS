@@ -67,7 +67,7 @@ $(document).ready(function(){
         var Total = (tax + SubTotal).toFixed(2);
 
         //preparing form5
-         fields = [$('#FirstName').val() + ' ' + $('#LastName').val(),
+         var fields = [$('#FirstName').val() + ' ' + $('#LastName').val(),
             $('#phone').val(),
             $('#email').val(),
             $('#StreetAddress').val(),
@@ -81,7 +81,7 @@ $(document).ready(function(){
              document.getElementById("total").value = Total];
 
         //this will input all the information to form 5 for staff/customer review
-        var tr = $("#form5 tr");
+        var tr = $("#form5").find("tr");
         tr.each(function () {
             $(this).children('td:nth-child(2)').html(fields[$(this).index()]);
         });
@@ -95,7 +95,7 @@ $(document).ready(function(){
         previous_fs = $(this).parent().prev();
 
         //de-activate current step on progressbar
-        $("#progress_bar li").eq($("fieldset").index(current_fs)).removeClass("active");
+        $("#progress_bar").find("li").eq($("fieldset").index(current_fs)).removeClass("active");
 
         //show the previous fieldset
         previous_fs.show();

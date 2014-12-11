@@ -23,8 +23,8 @@
     <script>
         $(function () {
             var pull = $('#pull');
-            menu = $('nav ul');
-            menuHeight = menu.height();
+            var menu = $('nav ul');
+            var menuHeight = menu.height();
 
             $(pull).on('click', function (e) {
                 e.preventDefault();
@@ -111,7 +111,7 @@
                     <div class="contact-form">
                         <h3>Contact Us</h3>
 
-                        <form method="post" action="contact-post.jsp">
+                        <form method="post" action="#">
                             <div>
                                 <span><label>NAME</label></span>
                                 <span><input name="userName" type="text" class="textbox"></span>
@@ -160,7 +160,6 @@
             <div class="clear"></div>
         </div>
     </div>
-</div>
 </div>
 </body>
 </html>

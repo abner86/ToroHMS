@@ -78,9 +78,6 @@
             <option>4</option>
             <option>5</option>
             <option>6</option>
-            <option>7</option>
-            <option>8</option>
-            <option>9</option>
         </select>
         <br/>
         <input type="button" name="previous" class="previous action-button" value="Previous"/>

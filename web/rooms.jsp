@@ -22,8 +22,8 @@
     <script>
         $(function () {
             var pull = $('#pull');
-            menu = $('nav ul');
-            menuHeight = menu.height();
+            var menu = $('nav ul');
+            var menuHeight = menu.height();
 
             $(pull).on('click', function (e) {
                 e.preventDefault();

@@ -39,8 +39,8 @@
     <tr>
         <td>&nbsp;</td>
         <td>&nbsp;</td>
-        <td><span style="font-size: large; "><b>Welcome</b></span></td>
-        <td><span style="font-size: large; "><b><%=currentUser.getFirstname() + " " + currentUser.getLastname()%>
+        <td><span style="font-size: large;  font-weight: bold;">Welcome</span></td>
+        <td><span style="font-size: large;  font-weight: bold;"><b><%=currentUser.getFirstname() + " " + currentUser.getLastname()%>
         </b></span></td>
         <td>&nbsp;</td>
         <td>&nbsp;</td>
@@ -80,7 +80,7 @@
     %>
     <form id="tform">
         <table border=".2">
-            <h3 class="title"><span>Customers</span> Reservation</h2>
+            <h3 class="title"><span>Customers</span> Reservation</h3>
             <tr>
                 <th>Last Name</th>
                 <th>First Name</th>
@@ -124,7 +124,9 @@
                 </td>
                 <td><%= resultSet.getInt(16)%></td>
             </tr>
-            <% }try {
+            <%try {
+} catch (Exception e) {
+} }try {
 } catch (Exception e) {
 }%>
         </table>

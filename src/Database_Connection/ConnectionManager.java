@@ -11,11 +11,11 @@ public class ConnectionManager {
     private static Connection connection;
     //static String url;
     //Database connection address, password, username, and driver
-    private static String url = "jdbc:mysql://localhost:3306/";
-    private static String dbName = "ToroHMS";
-    private static String dbUser = "abnerb86";
-    private static String dbPass = "adriab2005";
-    private static String driver = "com.mysql.jdbc.Driver";
+    private static final String url = "jdbc:mysql://localhost:3306/";
+    private static final String dbName = "ToroHMS";
+    private static final String dbUser = "abnerb86";
+    private static final String dbPass = "adriab2005";
+    private static final String driver = "com.mysql.jdbc.Driver";
 
     public static Connection getConnection() {
         try {

@@ -4,7 +4,6 @@ package Hotel.Rooms;
 /**
  * Created by kosu on 11/20/2014.
  */
-
 import Database_Connection.ConnectionManager;
 
 import java.sql.*;

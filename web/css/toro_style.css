@@ -91,9 +91,7 @@ body{
     display: none;
     margin-top: 10px;
 }
-.nav_bg{
-    background: #464646;
-}
+
 .clearfix {
     height: 40px;
     width: 100%;
@@ -151,7 +149,6 @@ body{
     background:url('/images/nav-icon.png')no-repeat;
     width: 30px;
     content:"";
-    width: 30px;
     height: 30px;
     display: inline-block;
     position: absolute;
@@ -548,20 +545,7 @@ p.para{
     font-weight: 100;
     margin-bottom: 15px;
 }
-.span_of_2{
-    padding: 4% 0;
-    margin: 6% 0;
-    border-bottom: 2px dashed rgb(109, 109, 109);
-    border-top: 2px dashed rgb(109, 109, 109);
-}
-.span2_of_1{
-    float:left;
-    width: 47.33333%;
-    margin-left: 4.33333%;
-}
-.span2_of_1:first-child{
-    margin-left: 0;
-}
+
 .span2_of_1 h4{
     text-transform: capitalize;
     font-size: 1em;
@@ -569,21 +553,7 @@ p.para{
     font-weight: 600;
     margin-bottom: 5px;
 }
-.sel_room{
-    float:left;
-    width: 47.77777%;
-}
-.sel_room.left{
-    margin-left: 4.33333%;
-}
-.book_date.btm{
-    margin-bottom: 15px;
-}
-.res_btn{
-    text-align: center;
-    display: block;
-    margin-bottom: 4%;
-}
+
 .res_btn form input[type="submit"] {
     display: inline-block;
     text-transform: capitalize;
@@ -607,12 +577,7 @@ p.para{
 }
 
 /* start portfolio page */
-.service_list{
-    display: block;
-}
-.service_list.top{
-    margin-top:4%;
-}
+
 .service_list li{
     float: left;
     width: 22.3333%;
@@ -663,9 +628,7 @@ p.para{
 .service_list li h4 a:hover{
     color: #191919;
 }
-.ser_img {
-    position: relative;
-}
+
 span.next{
     -o-transition-duration: 1s;
     -moz-transition-duration: 1s;
@@ -804,12 +767,7 @@ span.next:hover {
     color: #252525;
     font-weight: 100;
 }
-.det_pic{
-    margin: 2% 0;
-}
-.read_more{
-    margin-top: 2%;
-}
+
 .read_more a{
     display:inline-block;
     text-transform: capitalize;
